@@ -9,33 +9,41 @@ To write a program to predict the marks scored by a student using the simple lin
 
 ## Algorithm
 
-
-ALGORITHM: Simple Linear Regression using Python (sklearn)
-
 1: Import the required libraries:
         numpy, matplotlib.pyplot, LinearRegression from sklearn.linear_model
+        
 2: Initialize the dataset:
         Assign values to independent variable X (hours studied)
         Assign values to dependent variable Y (marks scored)
+        
 3: Reshape the X data into a 2D array using reshape(-1,1)
+
 4: Create the Linear Regression model:
         model = LinearRegression()
+        
 5: Train the model using the dataset:
         model.fit(X, Y)
+        
 6: Compute the slope (m) and intercept (b):
         m = model.coef_[0]
         b = model.intercept_
+        
 7: Form the regression equation:
         Y = mX + b
+        
 8: Accept user input for prediction:
         Read value of x_input (hours studied)
+        
 9: Predict the output using the model:
          predicted_value = model.predict([[x_input]])
+         
 10: Generate predicted values for all X:
          Y_pred = model.predict(X)
+         
 11: Plot the graph:
          Draw scatter plot for actual data points
          Draw regression line using predicted values
+         
 12: Display labels, title, legend and show the plot
 
 
